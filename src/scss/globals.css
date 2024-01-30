@@ -1,0 +1,63 @@
+:root {
+  --navy-shadow: rgb(92, 61, 46 , 0.7);
+  --background-color: #2D2424; 
+  --lightest-navy: #B85C38;
+  --light-navy: #ff7f4d;
+  --dark-slate: #937e63;
+  --slate: #E0C097;
+  --light-slate: #f0d089;
+  --lightest-slate: #ffeaa9;
+  --theme-color: #B85C38;
+}
+
+::-moz-selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+::selection {
+  color: white;
+  background: var(--theme-color);
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: var(--background-color);
+  counter-reset: title;
+}
+
+main {
+  transition: 0.3s ease-in-out;
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--background-color);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--background-color);
+  border-radius: 10px;
+}
