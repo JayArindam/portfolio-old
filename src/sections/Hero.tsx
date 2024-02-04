@@ -1,7 +1,62 @@
-import Button from "@/components/Button";
+// import Button from "@/components/Button";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
+// -------------------------------------------------------------------------------
+
+interface TypingEffectProps {
+  strings: string[];
+  initial: { [key: string]: any };
+  animate: { [key: string]: any };
+  transition: { [key: string]: any };
+}
+
+const TypingEffect: React.FC<TypingEffectProps> = ({
+  strings,
+  initial,
+  animate,
+  transition,
+}) => {
+  const [currentStringIndex, setCurrentStringIndex] = useState(0);
+  const [typedText, setTypedText] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTypedText((prevText) => {
+        const currentString = strings[currentStringIndex];
+        const nextChar = currentString[prevText.length];
+
+        if (nextChar !== undefined) {
+          return prevText + nextChar;
+        } else {
+          setCurrentStringIndex((prevIndex) =>
+            (prevIndex + 1) % strings.length
+          );
+          return "";
+        }
+      });
+    }, 250);
+
+    return () => clearInterval(interval);
+  }, [strings, currentStringIndex]);
+
+  return (
+    <motion.h2
+      className="hero-title-large"
+      style={{ height: "6rem", overflow: "hidden" }} // Set a fixed height and hide overflow
+      initial={initial}
+      animate={animate}
+      transition={transition}
+    >
+      {typedText}
+    </motion.h2>
+  );
+};
+
+// -------------------------------------------------------------------------------
+
 function Hero() {
   return (
     <div className="hero">
@@ -15,9 +70,10 @@ function Hero() {
           delay: 0.6,
         }}
       >
-        Hi my name is
+        Hi I am
       </motion.h1>
-      <motion.h2
+
+      {/* <motion.h2
         className="hero-title-large"
         initial={{ opacity: 0, y: 5 }}
         animate={{ opacity: 1, y: 0 }}
@@ -28,7 +84,22 @@ function Hero() {
         }}
       >
         Jay Arindam Maity.
-      </motion.h2>
+      </motion.h2> */}
+
+      <TypingEffect
+        strings={[
+          "Jay Arindam Maity...",
+          "Data Science Enthusisast...",
+        ]}
+        initial={{ opacity: 0, y: 5 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+          ease: "easeInOut",
+          delay: 0.75,
+        }}
+      />
+
       <motion.h3
         className="hero-title-large hero-title-sub"
         initial={{ opacity: 0, y: 5 }}
@@ -41,6 +112,7 @@ function Hero() {
       >
         I love coding.
       </motion.h3>
+
       <motion.p
         className="hero-text"
         initial={{ opacity: 0, y: 5 }}
