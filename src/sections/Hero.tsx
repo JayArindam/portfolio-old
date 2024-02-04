@@ -45,7 +45,7 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
   return (
     <motion.h2
       className="hero-title-large"
-      style={{ height: "6rem", overflow: "hidden" }} // Set a fixed height and hide overflow
+      style={{ height: "6rem", overflow: "hidden" }}
       initial={initial}
       animate={animate}
       transition={transition}
