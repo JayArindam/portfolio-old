@@ -7,23 +7,23 @@ import { motion } from "framer-motion";
 function Projects() {
   const projectsData = [
     {
-      image: "/project2.png",
-      projectName: "Python Games Arenaz",
-      projectLink: "https://github.com/pinak22dhir/Python-Gamez-Arena",
+      image: "/project1.png",
+      projectName: "UrbanVoyage",
+      projectLink: "#",
       projectDescription:
-        "This was a interactive game launcher made with help of python and tKinter. It aims at bringing all your games together at one place and can create multiple ID's for different users in a system",
+        "This project aims at promoting travel. What I essentially made was a website that promotes travel and has a authentication system. The authentication system was made with firebase and also has a password recovery system. This project was mainly made to showcase my firebase and coding skills 😅",
       projectTech: [
-        "Python",
-        "tKinter",
-        "CSV",
+        "HTML",
+        "CSS",
+        "Javascript",
       ],
       projectExternalLinks: {
-        github: "https://github.com/pinak22dhir/Python-Gamez-Arena",
-        externalLink: "https://github.com/pinak22dhir/Python-Gamez-Arena",
+        github: "#",
+        externalLink: "https://voyageurban.netlify.app/",
       },
     },
     {
-      image: "/project1.png",
+      image: "/project2.png",
       projectName: "Juspay Clone",
       projectLink: "https://jayarindam.github.io/FEE-Juspay-clone/",
       projectDescription:
