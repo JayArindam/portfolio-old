@@ -37,7 +37,7 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
           return "";
         }
       });
-    }, 250);
+    }, 200);
 
     return () => clearInterval(interval);
   }, [strings, currentStringIndex]);
