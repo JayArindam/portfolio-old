@@ -89,7 +89,6 @@ function Hero() {
       <TypingEffect
         strings={[
           "Jay Arindam Maity...",
-          "Data Science Enthusisast...",
         ]}
         initial={{ opacity: 0, y: 5 }}
         animate={{ opacity: 1, y: 0 }}
