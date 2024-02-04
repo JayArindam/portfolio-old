@@ -10,7 +10,8 @@ function Footer() {
   });
 
   useEffect(() => {
-    fetch("https://api.https://github.com/JayArindam/Code_Forces")
+    // fetch("https://api.https://github.com/JayArindam/Code_Forces")
+    fetch("#")
       .then((response) => response.json())
       .then((json) => {
         const { stargazers_count, forks_count } = json;
