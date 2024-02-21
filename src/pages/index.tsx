@@ -43,7 +43,7 @@ function Index() {
       )}
       <Loader isLoading={isLoading} setIsLoading={handleLoaderLoaded} />
     </div>
-  );
+  )
 }
 
 export default Index;

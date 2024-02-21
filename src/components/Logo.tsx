@@ -1,5 +1,5 @@
 import React from "react";
-import jay from "./jay.png";
+import jay from "../../public/jay.png";
 
 function Logo() {
   return (
