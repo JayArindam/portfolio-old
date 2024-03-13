@@ -1,5 +1,6 @@
 import React from "react";
 import jay from "../../public/jay.png";
+import Link from "next/link";
 
 function Logo() {
   return (
@@ -11,6 +12,7 @@ function Logo() {
         style={{ width: "100px", height: "100px" }}
       />
     </div>
+    
   );
 }
 

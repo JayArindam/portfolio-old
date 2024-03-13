@@ -20,13 +20,6 @@ function Loader({ isLoading, setIsLoading }: any) {
             ease: "easeInOut",
           }}
         >
-          {/* <div className="dot-bouncing-loader">
-            <div className="dot" />
-            <div className="dot" />
-            <div className="dot" />
-            <div className="dot" />
-            <div className="dot" />
-          </div> */}
         </motion.div>
       )}
     </AnimatePresence>
