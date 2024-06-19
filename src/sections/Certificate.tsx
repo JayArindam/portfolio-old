@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 function Certificates() {
   const certificate_data = [
     {
+      certificateName: "Code Foundations Skill Path",
+      issuingOrganisation: "Codecademy",
+      yearIssued: "2024", 
+      certificateLink:"https://www.codecademy.com/profiles/text7592143704/certificates/5b55e668646caa552f8e4d1d"
+    },
+    {
       certificateName: "Leading People and Teams Specialization",
       issuingOrganisation: "Coursera",
       yearIssued: "2023", 
