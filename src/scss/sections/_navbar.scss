@@ -19,7 +19,7 @@ nav {
         fill: none;
         margin: 2rem 0;
         cursor: pointer;
-        outline: 2px dashed transparent;
+        outline: none;
         transition: 0.3s ease-in-out;
         &:hover {
           fill: #e0c0973c;
@@ -53,7 +53,7 @@ nav {
         list-style-type: none;
         &-item {
           a {
-            outline: 2px dashed transparent;
+            // outline: 2px dashed transparent;
             padding: 10px;
             text-decoration: none;
             color: inherit;

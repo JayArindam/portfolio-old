@@ -1,0 +1,22 @@
+.Cert_heading {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    color: var(--lightest-slate);
+    align-items: center;
+    margin: 10% auto;
+    padding: 0;
+}
+
+.Certification_bar {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    background-color: #ff7f4dbe;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p {
+    color: var(--theme);
+}
+
+a {
+    color: var(--lightest-slate);
+}

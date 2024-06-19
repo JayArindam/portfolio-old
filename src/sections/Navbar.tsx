@@ -13,7 +13,7 @@ function Navbar() {
     { name: "Experience", link: "/#experience" },
     { name: "Work", link: "/#work" },
     { name: "Contact", link: "/#contact",},
-    // { name: "Certifications" , link: "/Certificates"},
+    { name: "Certifications" , link: "/Certificates"},
   ];
 
   useEffect(() => {
@@ -60,7 +60,7 @@ function Navbar() {
             ease: "easeInOut",
           }}
         >
-          <Link href="#">
+          <Link href="/">
             <Logo />
           </Link>
         </motion.div>
