@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 function Certificates() {
   const certificate_data = [
     {
+      certificateName: "Leading People and Teams Specialization",
+      issuingOrganisation: "Coursera",
+      yearIssued: "2023", 
+      certificateLink:"https://www.coursera.org/account/accomplishments/specialization/certificate/9KESM4RSXQK5"
+    },
+    {
       certificateName: "Python (Basic)",
       issuingOrganisation: "HackerRank",
       yearIssued: "2023", 
@@ -14,6 +20,12 @@ function Certificates() {
       issuingOrganisation: "Coding Ninjas",
       yearIssued: "2023", 
       certificateLink:"https://certificate.codingninjas.com/verify/ce2f69701a4e5ec5"
+    },
+    {
+      certificateName: "Google Play Academy - Store Listing Certificate",
+      issuingOrganisation: "Google",
+      yearIssued: "2023", 
+      certificateLink:"https://www.credential.net/e1ea9ecf-7213-4327-b62a-e1c4ac62f600"
     },
     {
       certificateName: "Problem Solving (Basic)",
